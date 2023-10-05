@@ -14,7 +14,7 @@ const albumSchema = {
 
 
     title: { type: String, required: true, trim: true },
-    artist: { type: String, required: true, trim: true },
+    artistId: { type: mongoose.Schema.Types.ObjectId, ref: 'Artist' },
     coverUrl:{ type: String, trim: true },
     year:{ type: Number, required: true },
     genre: { type: String, required: true }
