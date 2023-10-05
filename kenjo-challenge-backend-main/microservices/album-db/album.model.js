@@ -4,13 +4,21 @@ const mongoose = require('mongoose');
 const COLLECTION_NAME = 'album-db';
 
 const albumSchema = {
-    title: { type: String, required: true, trim: true },
+   /* title: { type: String, required: true, trim: true },
     artist: { type: String, required: true, trim: true },
     photoUrl: { type: String, trim: true },
     year: { type: Number, required: true },
     genre: { type: String, required: true },
     score: { type: Number } // Modify this field as you need
-    // Add any  fields you need
+    // Add any  fields you need*/
+
+
+    title: { type: String, required: true, trim: true },
+    artist: { type: String, required: true, trim: true },
+    coverUrl:{ type: String, trim: true },
+    year:{ type: Number, required: true },
+    genre: { type: String, required: true }
+
 };
 
 const albumDbModel = mongoose.model(COLLECTION_NAME, albumSchema);
