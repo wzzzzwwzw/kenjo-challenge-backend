@@ -17,7 +17,9 @@ const albumSchema = {
     artistId: { type: mongoose.Schema.Types.ObjectId, ref: 'Artist' },
     coverUrl:{ type: String, trim: true },
     year:{ type: Number, required: true },
-    genre: { type: String, required: true }
+    genre: { type: String, required: true },
+    score: { type: Number, required: true },
+
 
 };
 
@@ -26,7 +28,7 @@ const albumDbModel = mongoose.model(COLLECTION_NAME, albumSchema);
 // Creating unique index
 const compoundIndex = {
     title: 1,
-    artist: 1
+    artistId: 1,
 };
 albumDbModel.schema.index(compoundIndex, { unique: true });
 

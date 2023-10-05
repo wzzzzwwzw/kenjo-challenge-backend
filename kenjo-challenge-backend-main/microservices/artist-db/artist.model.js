@@ -15,8 +15,7 @@ const artistDbModel = mongoose.model(COLLECTION_NAME, artistSchema);
 
 // Creating unique index
 const compoundIndex = {
-    title: 1,
-    album: 1
+    name: 1
 };
 artistDbModel.schema.index(compoundIndex, { unique: true });
 
