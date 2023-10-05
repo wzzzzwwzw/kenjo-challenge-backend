@@ -24,16 +24,16 @@ app.use(microservicesRouting);
 
 // Error handling
 app.use((error, req, res, next) => {
-  if (!res.writableEnded) {
-    res.status(500).json(error.message);
-  }
-  return;
+    if (!res.writableEnded) {
+        res.status(500).json(error.message);
+    }
+    return;
 })
 
 // Initialize database
 let server;
 let mongoClient;
-const mongoOptions = { useNewUrlParser: true, useUnifiedTopology: true };
+const mongoOptions = {useNewUrlParser: true, useUnifiedTopology: true};
 
 (async () => {
     try {

@@ -9,7 +9,7 @@ artistDbRouter.use(express.json({limit: '50mb'}));
 // CREATE
 artistDbRouter.post('/create',
     (req, res, next) => {
-       artistDbMicroservice.create(req, res, next);
+        artistDbMicroservice.create(req, res, next);
     });
 
 // READ

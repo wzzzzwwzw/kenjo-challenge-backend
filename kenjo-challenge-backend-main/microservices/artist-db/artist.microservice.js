@@ -65,7 +65,8 @@ class ArtistDbMicroservice {
      * @param {express.Next} next is the middleware to continue with code execution
      * @returns {Object} Empty object if the operation went well
      */
-    updateById = async (req, res, next) => { }
+    updateById = async (req, res, next) => {
+    }
 
     /**
      * @summary Delete a document
@@ -78,10 +79,10 @@ class ArtistDbMicroservice {
     deleteById = async (req, res, next) => {
 
         let documentId = req.params.id;
-        let deleteQuery = { _id: documentId };
+        let deleteQuery = {_id: documentId};
 
         ArtistModel.deleteOne(deleteQuery).then(deleteResult => {
-            if(check.not.assigned(deleteResult)){
+            if (check.not.assigned(deleteResult)) {
                 let error = new Error('Document to delete was not found.');
                 next(error);
                 return;
