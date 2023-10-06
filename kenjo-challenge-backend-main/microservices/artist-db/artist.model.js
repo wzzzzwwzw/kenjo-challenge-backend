@@ -6,7 +6,8 @@ const artistSchema = {
     name: {type: String, required: true, trim: true},
     photoUrl: {type: String, required: true, trim: true},
     birthdate: {type: String, required: false, trim: true},
-    deathDate: {type: String, required: false, trim: true}
+    deathDate: {type: String, required: false, trim: true},
+    albums: [{type: mongoose.Schema.Types.ObjectId, ref: 'Album'}]
 
 };
 
