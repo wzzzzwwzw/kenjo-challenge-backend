@@ -5,7 +5,7 @@ const httpStatusCodes = require('http-status-codes').StatusCodes;
 
 /**
  * @class AlbumDbMicroservice
- * @classdesc Album Database Microservice
+ * @classdesc Artist Database Microservice
  */
 class ArtistDbMicroservice {
     /***************************************************************

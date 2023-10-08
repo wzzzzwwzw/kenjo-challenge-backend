@@ -8,7 +8,6 @@ const albumRouter = require('./album-db/album.routing');
 microservicesRouter.use('/album', albumRouter);
 
 // Load and plug in artist
-
 const artistRouter = require('./artist-db/artist.routing');
 microservicesRouter.use('/artist', artistRouter);
 module.exports = microservicesRouter;
