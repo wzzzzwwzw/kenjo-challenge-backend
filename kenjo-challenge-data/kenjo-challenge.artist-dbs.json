@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "651faa65d873a62745700eb7"
+  },
+  "name": "Bad Bunny",
+  "photoUrl": "https://static01.nyt.com/images/2022/05/05/arts/05bad-bunny-ESP-promo/05bad-bunny1-mediumSquareAt3X.jpg",
+  "birthdate": "1994-06-26",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "651faf7eb73d14d17a011483"
+  },
+  "name": "Eminem",
+  "photoUrl": "https://media-assets.vanityfair.it/photos/6347d004902f93d456edf4f4/1:1/w_5504,h_5504,c_limit/Eminem_2022.jpg",
+  "birthdate": "1972-10-17",
+  "albums": [],
+  "__v": 0
+}]
